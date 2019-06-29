@@ -2,7 +2,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 
 void main() {
-  return runApp(
+  runApp(
     MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.red,
@@ -10,7 +10,9 @@ void main() {
           title: Text('Dicee'),
           backgroundColor: Colors.red,
         ),
-        body: DicePage(),
+        body: Center(
+            child: DicePage()
+        ),
       ),
     ),
   );
